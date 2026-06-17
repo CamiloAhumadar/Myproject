@@ -5,7 +5,7 @@ from typing import List
 from config.database import get_db
 from schemas.task_schema import TaskCreate, TaskResponse, TaskUpdate
 from services.task_service import TaskService
-from models.user_model import User
+from model.user_model import User
 from utils.dependencies import get_current_user
 
 router = APIRouter(prefix="/tasks", tags=["Tasks"])
